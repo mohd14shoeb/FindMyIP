@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BBB9DD42B31DD00004C7697 /* FindMyIPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB9DD32B31DD00004C7697 /* FindMyIPApp.swift */; };
+		4BBB9DD62B31DD00004C7697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB9DD52B31DD00004C7697 /* ContentView.swift */; };
+		4BBB9DD82B31DD02004C7697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB9DD72B31DD02004C7697 /* Assets.xcassets */; };
+		4BBB9DDB2B31DD02004C7697 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB9DDA2B31DD02004C7697 /* Preview Assets.xcassets */; };
+		4BBB9DE52B31DD03004C7697 /* FindMyIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB9DE42B31DD03004C7697 /* FindMyIPTests.swift */; };
+		4BBB9DEF2B31DD03004C7697 /* FindMyIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB9DEE2B31DD03004C7697 /* FindMyIPUITests.swift */; };
+		4BBB9DF12B31DD03004C7697 /* FindMyIPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB9DF02B31DD03004C7697 /* FindMyIPUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BBB9DE12B31DD03004C7697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BBB9DC82B31DD00004C7697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BBB9DCF2B31DD00004C7697;
+			remoteInfo = FindMyIP;
+		};
+		4BBB9DEB2B31DD03004C7697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BBB9DC82B31DD00004C7697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BBB9DCF2B31DD00004C7697;
+			remoteInfo = FindMyIP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BBB9DD02B31DD00004C7697 /* FindMyIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBB9DD32B31DD00004C7697 /* FindMyIPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPApp.swift; sourceTree = "<group>"; };
+		4BBB9DD52B31DD00004C7697 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4BBB9DD72B31DD02004C7697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BBB9DDA2B31DD02004C7697 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4BBB9DE02B31DD03004C7697 /* FindMyIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBB9DE42B31DD03004C7697 /* FindMyIPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPTests.swift; sourceTree = "<group>"; };
+		4BBB9DEA2B31DD03004C7697 /* FindMyIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBB9DEE2B31DD03004C7697 /* FindMyIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPUITests.swift; sourceTree = "<group>"; };
+		4BBB9DF02B31DD03004C7697 /* FindMyIPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BBB9DCD2B31DD00004C7697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBB9DDD2B31DD03004C7697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBB9DE72B31DD03004C7697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BBB9DC72B31DD00004C7697 = {
+			isa = PBXGroup;
+			children = (
+				4BBB9DD22B31DD00004C7697 /* FindMyIP */,
+				4BBB9DE32B31DD03004C7697 /* FindMyIPTests */,
+				4BBB9DED2B31DD03004C7697 /* FindMyIPUITests */,
+				4BBB9DD12B31DD00004C7697 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BBB9DD12B31DD00004C7697 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BBB9DD02B31DD00004C7697 /* FindMyIP.app */,
+				4BBB9DE02B31DD03004C7697 /* FindMyIPTests.xctest */,
+				4BBB9DEA2B31DD03004C7697 /* FindMyIPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BBB9DD22B31DD00004C7697 /* FindMyIP */ = {
+			isa = PBXGroup;
+			children = (
+				4BBB9DD32B31DD00004C7697 /* FindMyIPApp.swift */,
+				4BBB9DD52B31DD00004C7697 /* ContentView.swift */,
+				4BBB9DD72B31DD02004C7697 /* Assets.xcassets */,
+				4BBB9DD92B31DD02004C7697 /* Preview Content */,
+			);
+			path = FindMyIP;
+			sourceTree = "<group>";
+		};
+		4BBB9DD92B31DD02004C7697 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4BBB9DDA2B31DD02004C7697 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4BBB9DE32B31DD03004C7697 /* FindMyIPTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BBB9DE42B31DD03004C7697 /* FindMyIPTests.swift */,
+			);
+			path = FindMyIPTests;
+			sourceTree = "<group>";
+		};
+		4BBB9DED2B31DD03004C7697 /* FindMyIPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4BBB9DEE2B31DD03004C7697 /* FindMyIPUITests.swift */,
+				4BBB9DF02B31DD03004C7697 /* FindMyIPUITestsLaunchTests.swift */,
+			);
+			path = FindMyIPUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BBB9DCF2B31DD00004C7697 /* FindMyIP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BBB9DF42B31DD03004C7697 /* Build configuration list for PBXNativeTarget "FindMyIP" */;
+			buildPhases = (
+				4BBB9DCC2B31DD00004C7697 /* Sources */,
+				4BBB9DCD2B31DD00004C7697 /* Frameworks */,
+				4BBB9DCE2B31DD00004C7697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindMyIP;
+			productName = FindMyIP;
+			productReference = 4BBB9DD02B31DD00004C7697 /* FindMyIP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BBB9DDF2B31DD03004C7697 /* FindMyIPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BBB9DF72B31DD03004C7697 /* Build configuration list for PBXNativeTarget "FindMyIPTests" */;
+			buildPhases = (
+				4BBB9DDC2B31DD03004C7697 /* Sources */,
+				4BBB9DDD2B31DD03004C7697 /* Frameworks */,
+				4BBB9DDE2B31DD03004C7697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BBB9DE22B31DD03004C7697 /* PBXTargetDependency */,
+			);
+			name = FindMyIPTests;
+			productName = FindMyIPTests;
+			productReference = 4BBB9DE02B31DD03004C7697 /* FindMyIPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4BBB9DE92B31DD03004C7697 /* FindMyIPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BBB9DFA2B31DD03004C7697 /* Build configuration list for PBXNativeTarget "FindMyIPUITests" */;
+			buildPhases = (
+				4BBB9DE62B31DD03004C7697 /* Sources */,
+				4BBB9DE72B31DD03004C7697 /* Frameworks */,
+				4BBB9DE82B31DD03004C7697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BBB9DEC2B31DD03004C7697 /* PBXTargetDependency */,
+			);
+			name = FindMyIPUITests;
+			productName = FindMyIPUITests;
+			productReference = 4BBB9DEA2B31DD03004C7697 /* FindMyIPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BBB9DC82B31DD00004C7697 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					4BBB9DCF2B31DD00004C7697 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					4BBB9DDF2B31DD03004C7697 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 4BBB9DCF2B31DD00004C7697;
+					};
+					4BBB9DE92B31DD03004C7697 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 4BBB9DCF2B31DD00004C7697;
+					};
+				};
+			};
+			buildConfigurationList = 4BBB9DCB2B31DD00004C7697 /* Build configuration list for PBXProject "FindMyIP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BBB9DC72B31DD00004C7697;
+			productRefGroup = 4BBB9DD12B31DD00004C7697 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BBB9DCF2B31DD00004C7697 /* FindMyIP */,
+				4BBB9DDF2B31DD03004C7697 /* FindMyIPTests */,
+				4BBB9DE92B31DD03004C7697 /* FindMyIPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BBB9DCE2B31DD00004C7697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBB9DDB2B31DD02004C7697 /* Preview Assets.xcassets in Resources */,
+				4BBB9DD82B31DD02004C7697 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBB9DDE2B31DD03004C7697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBB9DE82B31DD03004C7697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BBB9DCC2B31DD00004C7697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBB9DD62B31DD00004C7697 /* ContentView.swift in Sources */,
+				4BBB9DD42B31DD00004C7697 /* FindMyIPApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBB9DDC2B31DD03004C7697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBB9DE52B31DD03004C7697 /* FindMyIPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBB9DE62B31DD03004C7697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBB9DF12B31DD03004C7697 /* FindMyIPUITestsLaunchTests.swift in Sources */,
+				4BBB9DEF2B31DD03004C7697 /* FindMyIPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BBB9DE22B31DD03004C7697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BBB9DCF2B31DD00004C7697 /* FindMyIP */;
+			targetProxy = 4BBB9DE12B31DD03004C7697 /* PBXContainerItemProxy */;
+		};
+		4BBB9DEC2B31DD03004C7697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BBB9DCF2B31DD00004C7697 /* FindMyIP */;
+			targetProxy = 4BBB9DEB2B31DD03004C7697 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4BBB9DF22B31DD03004C7697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BBB9DF32B31DD03004C7697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BBB9DF52B31DD03004C7697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FindMyIP/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoeb.FindMyIP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BBB9DF62B31DD03004C7697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FindMyIP/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoeb.FindMyIP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BBB9DF82B31DD03004C7697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoeb.FindMyIPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyIP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindMyIP";
+			};
+			name = Debug;
+		};
+		4BBB9DF92B31DD03004C7697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoeb.FindMyIPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyIP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindMyIP";
+			};
+			name = Release;
+		};
+		4BBB9DFB2B31DD03004C7697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoeb.FindMyIPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMyIP;
+			};
+			name = Debug;
+		};
+		4BBB9DFC2B31DD03004C7697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoeb.FindMyIPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMyIP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BBB9DCB2B31DD00004C7697 /* Build configuration list for PBXProject "FindMyIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BBB9DF22B31DD03004C7697 /* Debug */,
+				4BBB9DF32B31DD03004C7697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BBB9DF42B31DD03004C7697 /* Build configuration list for PBXNativeTarget "FindMyIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BBB9DF52B31DD03004C7697 /* Debug */,
+				4BBB9DF62B31DD03004C7697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BBB9DF72B31DD03004C7697 /* Build configuration list for PBXNativeTarget "FindMyIPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BBB9DF82B31DD03004C7697 /* Debug */,
+				4BBB9DF92B31DD03004C7697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BBB9DFA2B31DD03004C7697 /* Build configuration list for PBXNativeTarget "FindMyIPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BBB9DFB2B31DD03004C7697 /* Debug */,
+				4BBB9DFC2B31DD03004C7697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BBB9DC82B31DD00004C7697 /* Project object */;
+}
