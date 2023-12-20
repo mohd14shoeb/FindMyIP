@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct IPAddressView: View {
+public struct IPAddressView: View {
     @StateObject var viewModel = IPInfoViewModel()
     public init() {}
 
-     var body: some View {
+    public var body: some View {
        VStack {
            if self.viewModel.isLoading {
                LoadingIndicatorView(isLoading: self.viewModel.isLoading,
