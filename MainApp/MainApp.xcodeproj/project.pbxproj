@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B4C828A2B33754700D5F599 /* FindMyIPFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4C82872B33750A00D5F599 /* FindMyIPFramework.framework */; };
+		4B4C828B2B33754700D5F599 /* FindMyIPFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4C82872B33750A00D5F599 /* FindMyIPFramework.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4BBB9EE32B324208004C7697 /* MainAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB9EE22B324208004C7697 /* MainAppApp.swift */; };
 		4BBB9EE52B324208004C7697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB9EE42B324208004C7697 /* ContentView.swift */; };
 		4BBB9EE72B32420A004C7697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB9EE62B32420A004C7697 /* Assets.xcassets */; };
@@ -33,7 +35,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4B4C828C2B33754700D5F599 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4B4C828B2B33754700D5F599 /* FindMyIPFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4B4C82872B33750A00D5F599 /* FindMyIPFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FindMyIPFramework.framework; sourceTree = "<group>"; };
 		4BBB9EDF2B324208004C7697 /* MainApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BBB9EE22B324208004C7697 /* MainAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppApp.swift; sourceTree = "<group>"; };
 		4BBB9EE42B324208004C7697 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B4C828A2B33754700D5F599 /* FindMyIPFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B4C82862B33749B00D5F599 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				4B4C82872B33750A00D5F599 /* FindMyIPFramework.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		4B4C82892B33751600D5F599 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4BBB9EE42B324208004C7697 /* ContentView.swift */,
+				4BBB9EE22B324208004C7697 /* MainAppApp.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		4BBB9ED62B324207004C7697 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +129,8 @@
 		4BBB9EE12B324208004C7697 /* MainApp */ = {
 			isa = PBXGroup;
 			children = (
-				4BBB9EE22B324208004C7697 /* MainAppApp.swift */,
-				4BBB9EE42B324208004C7697 /* ContentView.swift */,
+				4B4C82892B33751600D5F599 /* Source */,
+				4B4C82862B33749B00D5F599 /* Framework */,
 				4BBB9EE62B32420A004C7697 /* Assets.xcassets */,
 				4BBB9EE82B32420A004C7697 /* Preview Content */,
 			);
@@ -137,6 +172,7 @@
 				4BBB9EDB2B324208004C7697 /* Sources */,
 				4BBB9EDC2B324208004C7697 /* Frameworks */,
 				4BBB9EDD2B324208004C7697 /* Resources */,
+				4B4C828C2B33754700D5F599 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -423,6 +459,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MainApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MainApp/Framework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -451,6 +491,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MainApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MainApp/Framework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

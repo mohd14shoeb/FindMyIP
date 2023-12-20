@@ -1,0 +1,11 @@
+framework module FindMyIPFramework {
+  umbrella header "FindMyIPFramework.h"
+  export *
+
+  module * { export * }
+}
+
+module FindMyIPFramework.Swift {
+  header "FindMyIPFramework-Swift.h"
+  requires objc
+}
