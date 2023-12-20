@@ -8,7 +8,7 @@
 import SwiftUI
 
 public struct IPAddressView: View {
-    @StateObject var viewModel = IPInfoViewModel()
+    @StateObject var viewModel = IPViewModel()
     public init() {}
 
     public var body: some View {

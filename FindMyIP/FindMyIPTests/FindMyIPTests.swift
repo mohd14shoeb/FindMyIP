@@ -25,7 +25,23 @@ final class FindMyIPTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
-
+    func testFetchIPAddressSuccess() {
+        let expectedResult = "2402:e280:3d6e:1697:303b:210f:548c:13f4"
+       // let mockData = getmockData()
+        let viewModel = IPViewModel(networkManager:
+                                        MockIPNetworkManager(failureCase: false))
+                    let expectation = self.expectation(description: "Fetch IP Address")
+                    viewModel.fetchIPAddress()
+        
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        XCTAssertEqual(viewModel.ipAddress, expectedResult)
+                        XCTAssertEqual(viewModel.isLoading, false)
+                        XCTAssertEqual(viewModel.errorMessage, "")
+                        expectation.fulfill()
+                    }
+        
+                    waitForExpectations(timeout: 10.0, handler: nil)
+    }
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {

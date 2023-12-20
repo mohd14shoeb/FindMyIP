@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct IPInfoResponse: Codable {
+struct IPAddressResponse: Codable {
     let ipAddress, network, version, city: String?
     let region, regionCode, country, countryName: String?
     let countryCode, countryCodeIso3, countryCapital, countryTLD: String?

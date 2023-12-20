@@ -7,15 +7,15 @@
 
 import Foundation
 
-public class IPInfoViewModel: ObservableObject {
+open class IPViewModel: ObservableObject {
     // MARK: Published Property
     @Published var ipAddress: String = ""
     @Published var isLoading: Bool = true
     @Published var errorMessage: String = ""
-    private var networkManager: IPNetworkManager
+    private var networkManager: IPNetworkManagerDelegate
     
     // MARK: Initilize Property
-    public init(networkManager: IPNetworkManager = IPNetworkManager()) {
+   public  init(networkManager: IPNetworkManagerDelegate = IPNetworkManager()) {
         self.networkManager = networkManager
     }
     
@@ -23,7 +23,7 @@ public class IPInfoViewModel: ObservableObject {
     public func fetchIPAddress() {
         self.errorMessage = ""
         self.fetchDynamicResponseModel(url: "https://ipapi.co/json/", 
-                                       responseModel: IPInfoResponse.self) { result in
+                                       responseModel: IPAddressResponse.self) { result in
             switch result {
             case .success(let response):
                 self.isLoading = false

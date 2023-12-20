@@ -9,13 +9,17 @@ import Foundation
 import Alamofire
 
 // MARK: protocol NetworkManagerDelegate
- protocol IPNetworkManagerDelegate: AnyObject {
-    func fetchIPAddress<T: Decodable>(url: String, responseModel: T.Type, completion: @escaping (Result<T, Error>) -> Void)
+public protocol IPNetworkManagerDelegate: AnyObject {
+    func fetchIPAddress<T: Decodable>(url: String, 
+                                      responseModel: T.Type,
+                                      completion: @escaping (Result<T, Error>) -> Void)
 }
 
- class InternalNetworkManager: IPNetworkManagerDelegate {
-      init(){}
-     func fetchIPAddress<T: Decodable>(url: String, responseModel: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
+public class InternalNetworkManager: IPNetworkManagerDelegate {
+   public  init(){}
+    public func fetchIPAddress<T: Decodable>(url: String, 
+                                       responseModel: T.Type,
+                                       completion: @escaping (Result<T, Error>) -> Void) {
         AF.request(url)
             .validate()
             .responseDecodable(of: T.self) { response in
