@@ -15,9 +15,9 @@ public protocol IPNetworkManagerDelegate: AnyObject {
                                       completion: @escaping (Result<T, Error>) -> Void)
 }
 
-public class InternalNetworkManager: IPNetworkManagerDelegate {
-   public  init(){}
-    public func fetchIPAddress<T: Decodable>(url: String, 
+ class InternalNetworkManager: IPNetworkManagerDelegate {
+     init(){}
+     func fetchIPAddress<T: Decodable>(url: String,
                                        responseModel: T.Type,
                                        completion: @escaping (Result<T, Error>) -> Void) {
         AF.request(url)

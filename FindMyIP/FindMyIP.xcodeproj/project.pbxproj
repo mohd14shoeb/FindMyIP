@@ -13,7 +13,6 @@
 		4B4C82422B33675700D5F599 /* IPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C82412B33675700D5F599 /* IPViewModel.swift */; };
 		4B4C82442B33679200D5F599 /* IPNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C82432B33679200D5F599 /* IPNetworkManager.swift */; };
 		4B4C82462B3367D700D5F599 /* IPAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C82452B3367D700D5F599 /* IPAddressView.swift */; };
-		4B4C824D2B336B3F00D5F599 /* InternalNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C824C2B336B3F00D5F599 /* InternalNetworkManager.swift */; };
 		4B4C82592B336DAF00D5F599 /* FindMyIPFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C82582B336DAF00D5F599 /* FindMyIPFramework.docc */; };
 		4B4C825F2B336DB000D5F599 /* FindMyIPFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4C82552B336DAF00D5F599 /* FindMyIPFramework.framework */; };
 		4B4C82662B336DB000D5F599 /* FindMyIPFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C82652B336DB000D5F599 /* FindMyIPFrameworkTests.swift */; };
@@ -23,7 +22,6 @@
 		4B4C82752B336DFC00D5F599 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4B4C82742B336DFC00D5F599 /* Alamofire */; };
 		4B4C82762B336E2500D5F599 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C823F2B3366F100D5F599 /* LoadingIndicatorView.swift */; };
 		4B4C82772B336E2500D5F599 /* IPAddressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C823C2B3365ED00D5F599 /* IPAddressResponse.swift */; };
-		4B4C82782B336E2500D5F599 /* InternalNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C824C2B336B3F00D5F599 /* InternalNetworkManager.swift */; };
 		4B4C82792B336E2500D5F599 /* IPNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C82432B33679200D5F599 /* IPNetworkManager.swift */; };
 		4B4C827A2B336E2500D5F599 /* IPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C82412B33675700D5F599 /* IPViewModel.swift */; };
 		4B4C827B2B336E2500D5F599 /* IPAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C82452B3367D700D5F599 /* IPAddressView.swift */; };
@@ -96,7 +94,6 @@
 		4B4C82412B33675700D5F599 /* IPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPViewModel.swift; sourceTree = "<group>"; };
 		4B4C82432B33679200D5F599 /* IPNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPNetworkManager.swift; sourceTree = "<group>"; };
 		4B4C82452B3367D700D5F599 /* IPAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAddressView.swift; sourceTree = "<group>"; };
-		4B4C824C2B336B3F00D5F599 /* InternalNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalNetworkManager.swift; sourceTree = "<group>"; };
 		4B4C82552B336DAF00D5F599 /* FindMyIPFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FindMyIPFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4C82572B336DAF00D5F599 /* FindMyIPFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindMyIPFramework.h; sourceTree = "<group>"; };
 		4B4C82582B336DAF00D5F599 /* FindMyIPFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FindMyIPFramework.docc; sourceTree = "<group>"; };
@@ -208,7 +205,6 @@
 			children = (
 				4B4C823E2B3366E100D5F599 /* Views */,
 				4B4C82342B3364AB00D5F599 /* Model */,
-				4B4C82332B33646600D5F599 /* NetworkManager */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -227,14 +223,6 @@
 				4B4C82412B33675700D5F599 /* IPViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		4B4C82332B33646600D5F599 /* NetworkManager */ = {
-			isa = PBXGroup;
-			children = (
-				4B4C824C2B336B3F00D5F599 /* InternalNetworkManager.swift */,
-			);
-			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 		4B4C82342B3364AB00D5F599 /* Model */ = {
@@ -570,7 +558,6 @@
 			files = (
 				4B4C82762B336E2500D5F599 /* LoadingIndicatorView.swift in Sources */,
 				4B4C82772B336E2500D5F599 /* IPAddressResponse.swift in Sources */,
-				4B4C82782B336E2500D5F599 /* InternalNetworkManager.swift in Sources */,
 				4B4C82792B336E2500D5F599 /* IPNetworkManager.swift in Sources */,
 				4B4C827A2B336E2500D5F599 /* IPViewModel.swift in Sources */,
 				4B4C827B2B336E2500D5F599 /* IPAddressView.swift in Sources */,
@@ -591,7 +578,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B4C82422B33675700D5F599 /* IPViewModel.swift in Sources */,
-				4B4C824D2B336B3F00D5F599 /* InternalNetworkManager.swift in Sources */,
 				4B4C823D2B3365ED00D5F599 /* IPAddressResponse.swift in Sources */,
 				4BBB9DD62B31DD00004C7697 /* ContentView.swift in Sources */,
 				4B4C82462B3367D700D5F599 /* IPAddressView.swift in Sources */,

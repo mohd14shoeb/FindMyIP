@@ -6,19 +6,30 @@
 //
 
 import Foundation
+import Alamofire
 
-open class IPNetworkManager: IPNetworkManagerDelegate {
-    private let internalNetworkManager: IPNetworkManagerDelegate
-    
-  public   init(internalNetworkManager: IPNetworkManagerDelegate = InternalNetworkManager()) {
-        self.internalNetworkManager = internalNetworkManager
-    }
-    open func fetchIPAddress<T: Decodable>(url: String, 
-                                           responseModel: T.Type,
-                                           completion: @escaping (Result<T, Error>) -> Void) {
-        internalNetworkManager.fetchIPAddress(url: url, 
-                                              responseModel: responseModel,
-                                              completion: completion)
-    }
+// MARK: protocol NetworkManagerDelegate
+public protocol IPNetworkManagerDelegate: AnyObject {
+    func fetchIPAddress<T: Decodable>(url: String,
+                                      responseModel: T.Type,
+                                      completion: @escaping (Result<T, Error>) -> Void)
 }
+
+public class IPNetworkManager: IPNetworkManagerDelegate {
+    public  init(){}
+     public func fetchIPAddress<T: Decodable>(url: String,
+                                        responseModel: T.Type,
+                                        completion: @escaping (Result<T, Error>) -> Void) {
+         AF.request(url)
+             .validate()
+             .responseDecodable(of: T.self) { response in
+                 switch response.result {
+                 case .success(let decodedResponse):
+                     completion(.success(decodedResponse))
+                 case .failure(let error):
+                     completion(.failure(error))
+                 }
+             }
+     }
+ }
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-open class IPViewModel: ObservableObject {
+public class IPViewModel: ObservableObject {
     // MARK: Published Property
     @Published var ipAddress: String = ""
     @Published var isLoading: Bool = true
@@ -23,7 +23,8 @@ open class IPViewModel: ObservableObject {
     public func fetchIPAddress() {
         self.errorMessage = ""
         self.fetchDynamicResponseModel(url: "https://ipapi.co/json/", 
-                                       responseModel: IPAddressResponse.self) { result in
+                                       responseModel: IPAddressResponse.self) { [weak self] result in
+            guard let self = self else {return}
             switch result {
             case .success(let response):
                 self.isLoading = false
