@@ -56,12 +56,7 @@ extension IPViewModel {
             switch afError {
             case .sessionTaskFailed(let sessionError):
                 if let urlError = sessionError as? URLError {
-                    switch urlError.code {
-                    case .notConnectedToInternet:
-                        errorMessage = "Error: The Internet connection appears to be offline."
-                    default:
-                        errorMessage = "Error: \(urlError.localizedDescription)"
-                    }
+                    errorMessage = self.urlErrorHandling(urlError: urlError)
                 } else {
                     errorMessage = "Error: \(afError.localizedDescription)"
                 }
@@ -70,6 +65,17 @@ extension IPViewModel {
             }
         } else {
             errorMessage = "Error: \(error?.localizedDescription ?? errorMessage)"
+        }
+        return errorMessage
+    }
+    
+    private func urlErrorHandling(urlError: URLError) -> String {
+        var errorMessage = ""
+        switch urlError.code {
+        case .notConnectedToInternet:
+            errorMessage = "Error: The Internet connection appears to be offline."
+        default:
+            errorMessage = "Error: \(urlError.localizedDescription)"
         }
         return errorMessage
     }
