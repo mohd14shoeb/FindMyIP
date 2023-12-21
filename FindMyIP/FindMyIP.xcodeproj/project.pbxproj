@@ -29,6 +29,7 @@
 		4B4C82952B33839200D5F599 /* IPViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C82942B33839200D5F599 /* IPViewModelTests.swift */; };
 		4B97A8C52B3440BF0040081B /* ErrorHandlingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B97A8C42B3440BF0040081B /* ErrorHandlingUtils.swift */; };
 		4B97A8C62B34420B0040081B /* ErrorHandlingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B97A8C42B3440BF0040081B /* ErrorHandlingUtils.swift */; };
+		4B97A8CC2B3447100040081B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4B97A8CB2B3447100040081B /* Alamofire */; };
 		4BBB9DD42B31DD00004C7697 /* FindMyIPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB9DD32B31DD00004C7697 /* FindMyIPApp.swift */; };
 		4BBB9DD62B31DD00004C7697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB9DD52B31DD00004C7697 /* ContentView.swift */; };
 		4BBB9DD82B31DD02004C7697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB9DD72B31DD02004C7697 /* Assets.xcassets */; };
@@ -146,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B97A8CC2B3447100040081B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +448,9 @@
 				4BBB9DE22B31DD03004C7697 /* PBXTargetDependency */,
 			);
 			name = FindMyIPTests;
+			packageProductDependencies = (
+				4B97A8CB2B3447100040081B /* Alamofire */,
+			);
 			productName = FindMyIPTests;
 			productReference = 4BBB9DE02B31DD03004C7697 /* FindMyIPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -1075,6 +1080,11 @@
 			productName = Alamofire;
 		};
 		4B4C82742B336DFC00D5F599 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B4C82392B3365B600D5F599 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4B97A8CB2B3447100040081B /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4B4C82392B3365B600D5F599 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
