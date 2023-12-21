@@ -27,6 +27,8 @@
 		4B4C827B2B336E2500D5F599 /* IPAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C82452B3367D700D5F599 /* IPAddressView.swift */; };
 		4B4C82912B33808300D5F599 /* MockIPNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C82902B33808300D5F599 /* MockIPNetworkManager.swift */; };
 		4B4C82952B33839200D5F599 /* IPViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C82942B33839200D5F599 /* IPViewModelTests.swift */; };
+		4B97A8C52B3440BF0040081B /* ErrorHandlingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B97A8C42B3440BF0040081B /* ErrorHandlingUtils.swift */; };
+		4B97A8C62B34420B0040081B /* ErrorHandlingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B97A8C42B3440BF0040081B /* ErrorHandlingUtils.swift */; };
 		4BBB9DD42B31DD00004C7697 /* FindMyIPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB9DD32B31DD00004C7697 /* FindMyIPApp.swift */; };
 		4BBB9DD62B31DD00004C7697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB9DD52B31DD00004C7697 /* ContentView.swift */; };
 		4BBB9DD82B31DD02004C7697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BBB9DD72B31DD02004C7697 /* Assets.xcassets */; };
@@ -101,6 +103,7 @@
 		4B4C82652B336DB000D5F599 /* FindMyIPFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPFrameworkTests.swift; sourceTree = "<group>"; };
 		4B4C82902B33808300D5F599 /* MockIPNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockIPNetworkManager.swift; sourceTree = "<group>"; };
 		4B4C82942B33839200D5F599 /* IPViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPViewModelTests.swift; sourceTree = "<group>"; };
+		4B97A8C42B3440BF0040081B /* ErrorHandlingUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlingUtils.swift; sourceTree = "<group>"; };
 		4BBB9DD02B31DD00004C7697 /* FindMyIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BBB9DD32B31DD00004C7697 /* FindMyIPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyIPApp.swift; sourceTree = "<group>"; };
 		4BBB9DD52B31DD00004C7697 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -203,6 +206,7 @@
 		4B4C822F2B3363E300D5F599 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
+				4B97A8C32B3440600040081B /* Utils */,
 				4B4C823E2B3366E100D5F599 /* Views */,
 				4B4C82342B3364AB00D5F599 /* Model */,
 			);
@@ -279,6 +283,14 @@
 				4B4C82902B33808300D5F599 /* MockIPNetworkManager.swift */,
 			);
 			path = MockNetworkManager;
+			sourceTree = "<group>";
+		};
+		4B97A8C32B3440600040081B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4B97A8C42B3440BF0040081B /* ErrorHandlingUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		4BBB9DC72B31DD00004C7697 = {
@@ -556,6 +568,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B97A8C62B34420B0040081B /* ErrorHandlingUtils.swift in Sources */,
 				4B4C82762B336E2500D5F599 /* LoadingIndicatorView.swift in Sources */,
 				4B4C82772B336E2500D5F599 /* IPAddressResponse.swift in Sources */,
 				4B4C82792B336E2500D5F599 /* IPNetworkManager.swift in Sources */,
@@ -580,6 +593,7 @@
 				4B4C82422B33675700D5F599 /* IPViewModel.swift in Sources */,
 				4B4C823D2B3365ED00D5F599 /* IPAddressResponse.swift in Sources */,
 				4BBB9DD62B31DD00004C7697 /* ContentView.swift in Sources */,
+				4B97A8C52B3440BF0040081B /* ErrorHandlingUtils.swift in Sources */,
 				4B4C82462B3367D700D5F599 /* IPAddressView.swift in Sources */,
 				4B4C82442B33679200D5F599 /* IPNetworkManager.swift in Sources */,
 				4BBB9DD42B31DD00004C7697 /* FindMyIPApp.swift in Sources */,

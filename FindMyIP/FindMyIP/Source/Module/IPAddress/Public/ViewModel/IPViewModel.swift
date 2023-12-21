@@ -31,7 +31,7 @@ public class IPViewModel: ObservableObject {
                 self.isLoading = false
                 self.ipAddress = response.ipAddressValue
             case .failure(let error):
-                self.errorMessage = parseURLError(error as? AFError)
+                self.errorMessage =  ErrorHandlingUtils.parseURLError(error as? AFError)
             }
         }
     }
@@ -44,39 +44,5 @@ public class IPViewModel: ObservableObject {
                                       responseModel: responseModel) { result in
             completionHandler(result)
         }
-    }
-}
-
-extension IPViewModel {
-    
-    // MARK: Error handle
-    private func parseURLError(_ error: AFError?) -> String {
-        var errorMessage = "Unkown Error found"
-        if let afError = error {
-            switch afError {
-            case .sessionTaskFailed(let sessionError):
-                if let urlError = sessionError as? URLError {
-                    errorMessage = self.urlErrorHandling(urlError: urlError)
-                } else {
-                    errorMessage = "Error: \(afError.localizedDescription)"
-                }
-            default:
-                errorMessage = "Error: \(afError.localizedDescription)"
-            }
-        } else {
-            errorMessage = "Error: \(error?.localizedDescription ?? errorMessage)"
-        }
-        return errorMessage
-    }
-    
-    private func urlErrorHandling(urlError: URLError) -> String {
-        var errorMessage = ""
-        switch urlError.code {
-        case .notConnectedToInternet:
-            errorMessage = "Error: The Internet connection appears to be offline."
-        default:
-            errorMessage = "Error: \(urlError.localizedDescription)"
-        }
-        return errorMessage
     }
 }
