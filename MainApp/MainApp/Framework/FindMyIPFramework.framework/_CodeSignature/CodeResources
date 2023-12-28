@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/FindMyIPFramework-Swift.h</key>
 		<data>
-		rqUol3w3+P2/tU6PTL3RCUnj2d4=
+		funOPDlc3hCL2y/Qz7MiYF1IYc4=
 		</data>
 		<key>Headers/FindMyIPFramework.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/FindMyIPFramework.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		sdlHWnoOH/3zJ9D6F86IaQYLELg=
+		X1us4NHW7I062CVHOJThg7uw2mU=
 		</data>
 		<key>Modules/FindMyIPFramework.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		XyZ3cQbWbEv726Own1rBr5GhwVU=
+		mDWFWJ9+8MntrcN1tIhpw4mhYkE=
 		</data>
 		<key>Modules/FindMyIPFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/FindMyIPFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Gr74MOa9wxJAYttBn31pL2WPAek=
+		UrSauhwzDiV3I3+v01vnRAax3z8=
 		</data>
 		<key>Modules/FindMyIPFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/FindMyIPFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VPP20QAgniKUh0vRQPsMMm/AJpc=
+		XHSc1V/6KnkIKjruHfk1lwT7fcA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,7 +59,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tRPYfUXsdkvG4wkh41IVLQS6VI21c0aSCoXcCd9NcC0=
+			xa2hcHGqgNbIl0/nVTWk8DPxGNV+DMWG+20qToURb9E=
 			</data>
 		</dict>
 		<key>Headers/FindMyIPFramework.h</key>
@@ -73,14 +73,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YwH+lpEGbYlil66YSlOa1vnQ1SDXTticOEcg+62ponM=
+			i2jmJBAulmKrAnNWqLw3UtlhTt4FFDVtcSTbftQMba4=
 			</data>
 		</dict>
 		<key>Modules/FindMyIPFramework.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jsCvz1AZwkBcNH9CSGir16Otdz63vRlFlaYN7uM+9TQ=
+			fBllAssv7S/iqYpqKQABcL7QylZpxqLwqwcDHMFlyXw=
 			</data>
 		</dict>
 		<key>Modules/FindMyIPFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -101,7 +101,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZXsdsM7bJAmzQsdm2sh/8zW4uEvnAa/sFbNWJQKWfCw=
+			34Ohwke4bQe+6kvUEZjWft6K2PX8JsNlAySYtWi92Pg=
 			</data>
 		</dict>
 		<key>Modules/FindMyIPFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8btGVmC4FFF/qyobupEaq5AjixNJ1d6beksJEwM9n9A=
+			Rfyjexa8i/UMPggYddf2ZQVSZI68Ux2DDS8JlmZ43ts=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
