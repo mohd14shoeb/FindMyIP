@@ -218,7 +218,6 @@
 		4B4C82302B3363FA00D5F599 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4B4C823F2B3366F100D5F599 /* LoadingIndicatorView.swift */,
 				4B4C82452B3367D700D5F599 /* IPAddressView.swift */,
 			);
 			path = Views;
@@ -251,6 +250,7 @@
 		4B4C823E2B3366E100D5F599 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4B4C823F2B3366F100D5F599 /* LoadingIndicatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
