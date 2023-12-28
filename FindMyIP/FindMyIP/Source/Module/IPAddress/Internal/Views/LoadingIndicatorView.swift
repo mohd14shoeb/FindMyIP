@@ -7,13 +7,21 @@
 
 import SwiftUI
 
-struct LoadingIndicatorView: View {
+ public struct LoadingIndicatorView: View {
     
-    let isLoading: Bool
-    let error: String?
-    let retryAction: (() -> Void)?
+   private let isLoading: Bool
+   private let error: String?
+   private let retryAction: (() -> Void)?
     
-    var body: some View {
+     public init(isLoading: Bool, 
+                 error: String?,
+                 retryAction: ( () -> Void)?) {
+         self.isLoading = isLoading
+         self.error = error
+         self.retryAction = retryAction
+     }
+     
+     public var body: some View {
             Group {
                 if isLoading,
                     let error = error,

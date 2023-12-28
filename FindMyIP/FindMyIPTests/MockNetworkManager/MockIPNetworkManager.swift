@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 @testable import FindMyIP
 
 class MockIPNetworkManager: IPNetworkManagerDelegate {
@@ -14,25 +15,26 @@ class MockIPNetworkManager: IPNetworkManagerDelegate {
     init(failureCase: Bool = false) {
         self.failureCase = failureCase
     }
-    func fetchIPAddress<T: Decodable>(url: String, 
-                                      responseModel: T.Type,
-                                      completion: @escaping (Result<T, Error>) -> Void) {
-       if failureCase {
-           completion(.failure(NSError(domain: "MockErrorDomain", 
-                                       code: 500, userInfo: nil)))
-       } else {
-           if let response = self.getmockData() as? T {
-               completion(.success(response))
-           } else {
-               let error = NSError(domain: "Domain",
-                                   code: 0,
-                                   userInfo: [NSLocalizedDescriptionKey: "Failed to cast mock data"])
-               completion(.failure(error))
-           }
-       }
-        
+    
+    func fetchIPAddress<T: Decodable>(url: String, responseModel: T.Type) -> AnyPublisher<T, Error> {
+        return Future<T, Error> { promise in
+            if self.failureCase {
+                promise(.failure(NSError(domain: "MockErrorDomain",
+                                         code: 500, userInfo: nil)))
+            } else {
+                if let response = self.getmockData() as? T {
+                    promise(.success(response))
+                } else {
+                    let error = NSError(domain: "Domain",
+                                        code: 0,
+                                        userInfo: [NSLocalizedDescriptionKey: "Failed to cast mock data"])
+                    promise(.failure(error))
+                }
+            }
+        }
+        .eraseToAnyPublisher()
     }
-
+    
     func getmockData() -> IPAddressResponse? {
         let mockData = IPAddressResponse(
             ipAddress: "2402:e280:3d6e:1697:303b:210f:548c:13f4",
@@ -65,5 +67,5 @@ class MockIPNetworkManager: IPNetworkManagerDelegate {
         )
         return mockData
     }
-
+    
 }

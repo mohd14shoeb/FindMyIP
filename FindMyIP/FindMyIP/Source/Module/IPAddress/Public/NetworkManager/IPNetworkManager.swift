@@ -7,29 +7,30 @@
 
 import Foundation
 import Alamofire
+import Combine
 
 // MARK: protocol NetworkManagerDelegate
 public protocol IPNetworkManagerDelegate: AnyObject {
-    func fetchIPAddress<T: Decodable>(url: String,
-                                      responseModel: T.Type,
-                                      completion: @escaping (Result<T, Error>) -> Void)
+    func fetchIPAddress<T: Decodable>(url: String, 
+                                      responseModel: T.Type) -> AnyPublisher<T, Error>
 }
 
 public class IPNetworkManager: IPNetworkManagerDelegate {
-    public  init(){}
-     public func fetchIPAddress<T: Decodable>(url: String,
-                                        responseModel: T.Type,
-                                        completion: @escaping (Result<T, Error>) -> Void) {
-         AF.request(url)
-             .validate()
-             .responseDecodable(of: T.self) { response in
-                 switch response.result {
-                 case .success(let decodedResponse):
-                     completion(.success(decodedResponse))
-                 case .failure(let error):
-                     completion(.failure(error))
-                 }
-             }
-     }
- }
-
+    public init() {}
+    
+    public func fetchIPAddress<T: Decodable>(url: String, responseModel: T.Type) -> AnyPublisher<T, Error> {
+        return Future<T, Error> { promise in
+            AF.request(url)
+                .validate()
+                .responseDecodable(of: T.self) { response in
+                    switch response.result {
+                    case .success(let decodedResponse):
+                        promise(.success(decodedResponse))
+                    case .failure(let error):
+                        promise(.failure(error))
+                    }
+                }
+        }
+        .eraseToAnyPublisher()
+    }
+}

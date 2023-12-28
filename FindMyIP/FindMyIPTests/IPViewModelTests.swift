@@ -44,7 +44,7 @@ final class IPViewModelTests: XCTestCase {
         self.viewModel?.fetchIPAddress()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-    
+            
             XCTAssertEqual(self.viewModel?.ipAddress, expectedResult)
             XCTAssertEqual(self.viewModel?.isLoading, true)
             XCTAssertNotNil(self.viewModel?.errorMessage)
@@ -53,6 +53,56 @@ final class IPViewModelTests: XCTestCase {
         waitForExpectations(timeout: 10.0, handler: nil)
     }
     
-   
+    
+    
+    func testFetchDynamicResponseModelSuccess() {
+        let expectedResult = "2402:e280:3d6e:1697:303b:210f:548c:13f4"
+        let expectation = self.expectation(description: "Fetch IP Address")
+        
+        let mockNetworkManager = MockIPNetworkManager(failureCase: false)
+        self.viewModel = IPViewModel(networkManager: mockNetworkManager)
+        
+        let cancellable = self.viewModel?.fetchDynamicResponseModel(url: "https://ipapi.co/json/",
+                                                                    responseModel: IPAddressResponse.self)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    XCTFail("Error occurred: \(error.localizedDescription)")
+                }
+                expectation.fulfill()
+            }, receiveValue: { response in
+                XCTAssertEqual(response.ipAddress, expectedResult)
+            })
+        wait(for: [expectation], timeout: 5.0)
+        cancellable?.cancel()
+    }
+    
+    func testfetchDynamicResponseModelFailure() {
+        let expectedResult = ""
+        self.viewModel = IPViewModel(networkManager:
+                                        MockIPNetworkManager(failureCase: true))
+        let expectation = self.expectation(description: "Fetch IP Address Failure")
+        let cancellable = self.viewModel?.fetchDynamicResponseModel(url: "https://ipapi.co/json/",
+                                                               responseModel: IPAddressResponse.self)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    XCTAssertEqual(self.viewModel?.ipAddress, expectedResult)
+                    XCTAssertEqual(self.viewModel?.isLoading, true)
+                    XCTAssertNotNil(error.localizedDescription)
+                }
+                expectation.fulfill()
+            }, receiveValue: { _ in
+                XCTFail("Should not receive a value on failure.")
+            })
+        wait(for: [expectation], timeout: 5.0)
+        cancellable?.cancel()
+    }
+    
     
 }
+
